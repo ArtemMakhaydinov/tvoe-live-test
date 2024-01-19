@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 TVOЁ catalog page
+  ul
+    each content in contents
+      li
+        a(href=content.url) #{content.name}
+    
+    else
+      li There is no content.
